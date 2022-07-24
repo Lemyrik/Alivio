@@ -6,3 +6,4 @@
 - "em"
 - @media
 - position
+- hover
