@@ -1,118 +1,118 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.body {
+    width: 100%;
     margin: 0;
     padding: 0;
-    font-family: "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    color: #444444;
-  }
-  
-  h1 {
-    width: 255px;
-    margin: 0 auto 8px;
-    font-family: "Georgia", serif;
-    text-align: center;
-    font-weight: normal;
-    font-size: 56px;
-    line-height: 64px;
-  }
-  
-  h2 {
-    border-bottom: 2px solid #cccccc;
-    padding-bottom: 12px;
-  }
-  
-  .container {
-    width: 510px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .site-header {
-    min-width: 550px;
-    height: 186px;
-    margin-bottom: 70px;
-    padding-top: 30px;
-    background: #847462 no-repeat center url("fotoo.jpg");
-    background-size: cover;
-    color: #000000;
-  }
-  
-  .site-header p {
-    width: 255px;
-    margin: 0 auto 26px;
-    text-align: center;
-    font-size: 16px;
-    line-height: 24px; 
-  }
-  
-  .site-header img {
-    display: block;
-    margin: 0 auto;
-  }
-  
-  .features {
-    width: 510px;
-    margin: 0 auto 30px;
-    padding: 0 20px;
-  }
-  
-  .features p {
+}
+.header__container {
+    position: relative;
+    width: 100%;
     display: inline-block;
-    vertical-align: top;
-    width: 30%;
-    margin: 0 5px;
-    background-repeat: no-repeat;
-    background-position: center top;
+    padding: 0.61%;
+    font-size: 20px;
+    background: #fff;
+    left: 140px;
+}
+.foto {
+    position:absolute;
+    width: 100%;
+    background: #fff;
+}
+.header__logo {
+    position:relative;
+    /*left: 160px;*/
+    color: #01996D;
+    font-weight: bold;
     text-align: center;
-  }
-  
-  .feature-Moun {
-    padding-top: 65px;
-    background-image: url("gory.jpg");
-  }
-  
-  .feature-Hot {
-    padding-top: 45px;
-    background-image: url("camel.jpg");
-  }
-  
-  .feature-sea {
-    padding-top: 65px;
-    background-image: url("paimma.jpg");
-  }
-  
-  .advantages {
-    width: 510px;
-    margin: 0 auto 40px;
-    padding: 0 20px;
-  }
-  
-  .advantages-list {
-    padding: 10;
-    list-style-type: disc;
-  }
-  
-  .advantages-item {
-    margin-bottom: 15px;
-    padding-left: 10px;
-    color: #050505;
-  }
-  
-  /* Добавьте новое пустое правило сюда */
-  
-  .site-footer {
-    min-width: 550px;
-    background-color: #78cbf5;
-    color: #000000;
-  }
-  
-  .site-footer .container {
-    text-align: center;
-  }
-  
-  .site-footer p {
+    font-family: 'Roboto', sans-serif;
+    /*padding-right: 100px;*/
+}
+.header__vhod {
     display: inline-block;
-    vertical-align: middle;
-    padding: 0 20px;
-  }
+    padding-left: 100px;
+    /*padding-right: 20px;*/
+}
+.header__btn-vhod {
+    /*margin-left: 100px;*/
+    padding: 10px 30px;
+    margin-left: 100px;
+}
+.header__btn {
+    background: #01996D;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 3px;
+    border-style: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+.header__btn:hover {
+opacity: 0.8;
+}
+.header__navbar-link {
+    position: relative;
+    text-decoration: none;
+    font-family: 'Lato';
+    color: black;
+    left: 80px;
+    padding-left: 40px;
+    /*margin: 40px;*/
+}
+.header__navbar-link:hover {
+    color: #01996D;
+}
+.header__logo, .header__nav, .header__vhod {
+    display: inline;
+    text-decoration: none;
+
+}
+.header__text-h {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-size:300%;
+    color: #01996D;
+}
+.header__text {
+    padding-bottom: 25px;
+}
+.header__vst {
+    position: absolute;
+    top: 21.22%;
+    left:5%;
+}
+@media (max-width: 1200px)
+{
+    .header__logo, .header__nav, .header__vst {
+font-size: 0.7em;
+padding: 0.5em;
+margin: 0.5em;
+transition: all .4s;}
+.header__btn {
+    font-size: 0.7em;
+    transition: all .4s;}
+}
+
+@media (max-width: 1073px)
+{
+    .header__logo, .header__nav, .header__vst {
+font-size: 0.35em;
+padding: 0.25em;
+margin: 0.25em;
+transition: all .4s;}
+.header__btn {
+    font-size: 0.35em;
+    transition: all .4s;
+}
+}
+@media (max-width: 813px)
+{
+    .header__logo, .header__nav, .header__vst {
+font-size: 0.25em;
+padding: 0.15em;
+margin: 0.15em;
+transition: all .4s;}
+.header__btn {
+    font-size: 0.25em;
+    transition: all .4s;
+}
+}
