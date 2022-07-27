@@ -2,6 +2,8 @@
 
 [Ссылка на сайт](https://lemyrik.github.io/Frontend/)
 
+Пока без адаптива)
+
 Что нового:
 - "em"
 - @media
